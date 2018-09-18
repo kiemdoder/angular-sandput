@@ -1,18 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeroesComponent } from './heroes.component';
-import { MaterialModule } from '../../modules/material.module';
+import { DashboardComponent } from './dashboard.component';
 import { AppModule } from '../../app.module';
 import { APP_BASE_HREF } from '@angular/common';
 
-describe('HeroesComponent', () => {
-  let component: HeroesComponent;
-  let fixture: ComponentFixture<HeroesComponent>;
+describe('DashboardComponent', () => {
+  let component: DashboardComponent;
+  let fixture: ComponentFixture<DashboardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        MaterialModule,
         AppModule
       ],
       providers: [{provide: APP_BASE_HREF, useValue: '/'}]
@@ -21,7 +19,7 @@ describe('HeroesComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroesComponent);
+    fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
